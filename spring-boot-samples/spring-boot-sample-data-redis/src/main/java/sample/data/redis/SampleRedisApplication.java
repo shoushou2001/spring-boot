@@ -37,6 +37,10 @@ public class SampleRedisApplication implements CommandLineRunner {
 			ops.set(key, "foo");
 		}
 		System.out.println("Found key " + key + ", value=" + ops.get(key));
+		
+		ops.set("Key1", "I'm Key1");
+		
+		System.out.println("Found key1, value=" + ops.get("Key1"));
 	}
 
 	public static void main(String[] args) throws Exception {
